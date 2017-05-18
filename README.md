@@ -1,10 +1,10 @@
 # Papillon International Excursions
-___
+
 
 
 ![screenshot of app](images/papillionFront.png)
 
-##Application for worldwide tours providing the ability for **Students** and **Teachers** to sign up, sign in and track payments made on the site.
+## Application for worldwide tours providing the ability for **Students** and **Teachers** to sign up, sign in and track payments made on the site.
 
 ___
 
