@@ -4,13 +4,17 @@ namespace PapillonInternational\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use  PapillonInternational\Tours;
+use  PapillonInternational\User;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+
+
+
 
 class HomeController extends Controller
 {
     /**
-     * Create a new controller instance.
-     *
-     * @return void
+     * HomeController constructor.
      */
     public function __construct()
     {
@@ -22,9 +26,23 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request ,Tours $tour)
     {
-        $tours = DB::table('tours')->get();
+        //Pass an array with the user roles you want to grant access
+        $request->user()->authorizeRoles(['Traveler', 'Group Leader','admin','user']);
+        //Get all the tours for this user
+        $user = $request->user();
+        $tours = $tour->where("user_id", "=", $user->id)->get();
+
         return view('home',compact('tours'));
     }
 }
+
+//Example use of a function with roles
+/*
+public function someAdminStuff(Request $request)
+{
+  $request->user()->authorizeRoles('manager');
+  return view(‘some.view’);
+}
+*/

@@ -156,7 +156,11 @@
                                     <div class="center-align home-content">
                                         <h1 class="home-title"><span>Papillon International Excursions</span></h1>
                                         <h2 class="home-subtitle">Because with travel comes possibility</h2>
-                                        <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">Create Your Tour<i class="mdi-content-send left"></i>
+                                        @if (Route::has('login'))
+                                             @auth
+                                                 <a href="{{ route('login') }}" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">Create Your Tour<i class="mdi-content-send left"></i>
+                                            @endauth
+                                         @endif
                                         </a>
                                     </div>
                                 </div>
@@ -865,7 +869,7 @@
         <script src="js/waypoints.js"></script>
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/jquery.nicescroll.min.js"></script>
-        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCK4DP9r1_iaTFSTMH4dpOjHwkuwJalK7s&sensor=true"></script>
         <script src="js/gmaps.js"></script>
         <script src="libs/owl-carousel/owl.carousel.min.js"></script>
         <script src="libs/materialize/js/materialize.min.js"></script>
