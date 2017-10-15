@@ -2,176 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="645de11b-721f-49ce-b1e2-54b7c64b1af7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/data/data/test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/dist/dist/random_compat.phar.pubkey" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/dist/dist/random_compat.phar.pubkey.asc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/lib/byte_safe_strings.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/lib/cast_to_int.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/lib/error_polyfill.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/lib/random.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/lib/random_bytes_com_dotnet.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/lib/random_bytes_dev_urandom.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/lib/random_bytes_libsodium.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/lib/random_bytes_libsodium_legacy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/lib/random_bytes_mcrypt.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/lib/random_int.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/other/other/build_phar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2758.phpt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2758/Issue2758Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2758/Issue2758TestListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2758/phpunit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/.github/.github/ISSUE_TEMPLATE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/data/data/ca-certificates.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/examples/examples/oauth.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Account.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/AlipayAccount.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/ApiRequestor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/ApiResource.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/ApiResponse.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/ApplePayDomain.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/ApplicationFee.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/ApplicationFeeRefund.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/AttachedObject.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Balance.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/BalanceTransaction.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/BankAccount.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/BitcoinReceiver.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/BitcoinTransaction.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Card.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Charge.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Collection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/CountrySpec.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Coupon.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Customer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Dispute.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/EphemeralKey.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/Api.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/ApiConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/Authentication.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/Base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/Card.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/InvalidRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/OAuth/InvalidClient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/OAuth/InvalidGrant.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/OAuth/InvalidRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/OAuth/InvalidScope.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/OAuth/OAuthBase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/OAuth/UnsupportedGrantType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/OAuth/UnsupportedResponseType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/Permission.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/RateLimit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Error/SignatureVerification.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Event.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/ExternalAccount.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/FileUpload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/HttpClient/ClientInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/HttpClient/CurlClient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Invoice.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/InvoiceItem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/JsonSerializable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/LoginLink.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/OAuth.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Order.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/OrderReturn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Payout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Plan.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Product.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Recipient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/RecipientTransfer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Refund.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/SKU.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/SingletonApiResource.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Source.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Stripe.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/StripeObject.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Subscription.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/SubscriptionItem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/ThreeDSecure.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Token.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Transfer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/TransferReversal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Util/AutoPagingIterator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Util/DefaultLogger.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Util/LoggerInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Util/RequestOptions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Util/Set.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Util/Util.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/Webhook.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/lib/WebhookSignature.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/AccountTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/ApiRequestorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/ApplePayDomainTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/ApplicationFeeRefundTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/ApplicationFeeTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/AttachedObjectTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/AuthenticationErrorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/BalanceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/BalanceTransactionTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/BankAccountTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/BitcoinReceiverTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/CardErrorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/ChargeTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/CollectionTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/CountrySpecTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/CouponTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/CurlClientTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/CustomerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/DiscountTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/DisputeTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/EphemeralKeyTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/ErrorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/ExternalAccountTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/FileUploadTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/InvalidRequestErrorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/InvoiceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/OAuthTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/PayoutTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/PermissionsErrorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/PlanTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/ProductTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/RateLimitErrorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/RecipientTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/RefundTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/RequestOptionsTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/SourceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/StripeObjectTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/SubscriptionItemTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/SubscriptionTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/TestCase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/ThreeDSecureTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/TokenTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/TransferReversalTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/TransferTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/UtilDefaultLoggerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/UtilTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/WebhookTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/bootstrap.no_autoload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/tests/tests/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/papilloninternational.com-.iml" afterPath="$PROJECT_DIR$/.idea/papilloninternational.com-.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/arrilot/laravel-widgets/src/Console/WidgetMakeCommand.php" afterPath="$PROJECT_DIR$/vendor/arrilot/laravel-widgets/src/Console/WidgetMakeCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/cast_to_int.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/cast_to_int.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_bytes_libsodium_legacy.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_bytes_libsodium_legacy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_int.php" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_int.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/psalm.xml" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/psalm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/.travis.yml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.7.md" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.7.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/build.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/composer.json" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit.xsd" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ramsey/uuid/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/ramsey/uuid/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php" afterPath="$PROJECT_DIR$/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/VERSION" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/VERSION" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Card.php" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Card.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Stripe.php" afterPath="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/Stripe.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -186,28 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding>
-                <element signature="e#41#81#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="72" column="63" lean-forward="false" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="voyager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/voyager.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -260,11 +69,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="239">
-              <caret line="45" column="46" lean-forward="true" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="68" />
+              <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tours.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Tours.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToursController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ToursController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1081">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -356,6 +185,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpServers">
     <servers />
@@ -657,12 +489,12 @@
       <workItem from="1504208783554" duration="308000" />
       <workItem from="1504648561987" duration="17484000" />
       <workItem from="1507228858722" duration="591000" />
-      <workItem from="1508086965368" duration="414000" />
+      <workItem from="1508086965368" duration="2193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54755000" />
+    <option name="totallyTimeSpent" value="56534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1294" height="844" extended-state="0" />
@@ -671,7 +503,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32443258" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -791,31 +623,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ToursController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="e#58#90#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RolesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Tours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#80#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,7 +873,23 @@
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="45" column="46" lean-forward="true" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="68" />
+          <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Tours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ToursController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1081">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="28" />
           <folding />
         </state>
       </provider>

@@ -14,7 +14,7 @@ class ToursController extends Controller
      */
     public function index()
     {
-        //
+        //ToDo get some code in here to create tours
     }
 
     /**
