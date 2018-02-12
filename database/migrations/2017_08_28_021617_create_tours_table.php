@@ -21,7 +21,7 @@ class CreateToursTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->date('start_date');
-            $table->enum('preferred length',array('7 Days','10 Days','13 Days','15 Days','Longer'));
+            $table->enum('preferred_length',array('7 Days','10 Days','13 Days','15 Days','Longer'));
             $table->enum('country', array('Belgium','England','France','Spain','Italy','Monaco','Switzerland'));
             $table->enum('tour_focus', array('Art','History','Foreign Language','Literature','Adventure','Photography','Adult tours','Student Tours'));
         });

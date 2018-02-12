@@ -11,8 +11,11 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    $tours = PapillonInternational\Tours::all();
+
+    return view('welcome', compact('tours'));
 });
 
 Auth::routes();
@@ -23,3 +26,23 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+Route::get('/tours/{tour}', function ($id) {
+    $tour = PapillonInternational\Tours::find($id);
+
+    return view('tours.show', compact('tour'));
+});
+
+Route::get('/tours/{tour}/register', function ($id) {
+    $tour = PapillonInternational\Tours::find($id);
+
+    return view('tours.register', compact('tour'));
+});
+
+Route::post('/registeruser/{id}', 'RegistrationController@update');
+

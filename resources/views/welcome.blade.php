@@ -129,6 +129,17 @@
 
                                                     @auth
                                                         <li><a href="{{ url('/home') }}">Home</a></li>
+                                                        <li>
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
                                                      @else
                                                         <li><a href="{{ route('login') }}"><i class="fa fa-sign-in fa-fw"></i>Login</a></li>
                                                         <li><a href="{{ route('register') }}"><i class="fa fa-user-plus fa-fw"></i>Register</a></li>
@@ -191,6 +202,7 @@
                                     <div class="clearfix section-head education-text">
                                         <div class="col-sm-12">
                                             <h2 class="title">Current Tours</h2>
+
                                             <p class="regular-text">We offer a spectrum of tours including high school,college, adult travel, high school exchanges, service learning trips</p>
                                         </div>
                                     </div>
@@ -198,78 +210,10 @@
                                         <div class="overflow-hidden">
                                             <div class="row">
                                                 <div id="educationSlider" class="clearfix card-element-wrapper">
+                                                    @foreach($tours as $tour)
+                                                        @include('tours.cards')
+                                                    @endforeach
 
-                                                    <!-- single education -->
-                                                    <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
-                                                        <div class="card">
-                                                            <div class="card-image waves-effect waves-block waves-light">
-                                                                <h2 class="left-align card-title-top">June 11-June 26, 2017 </h2>
-                                                                <div class="card-img-wrap">
-                                                                    <img class="activator" src="images/EuropeTour.webp" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-content">
-                                                                <span class="card-title activator brand-text">Madame Schlup's Europe tour 2017<i class="mdi-navigation-more-vert right"></i></span>
-                                                                <p>15 Days</p>
-                                                            </div>
-                                                            <!-- Reveal content-->
-                                                            <div class="card-reveal">
-                                                                <div class="rev-title-wrap">
-                                                                    <span class="card-title activator brand-text">Madame Schlup's Europe tour 2017<i class="mdi-navigation-close right"></i></span>
-                                                                    <p>15 Days</p>
-                                                                </div>
-                                                                <p class="rev-content">
-                                                                    Where: Paris, (London, opt), French Riviera, Monaco, Pisa, Venice, Florence, Rome, Pompeii, (Iceland, opt).When: June 11-June 26, 2017 (June 29th with Iceland, opt.)**Private tour**</p>
-                                                            </div>
-                                                        </div>
-                                                    </div> <!-- single education end -->
-
-                                                    <!-- single education -->
-                                                    <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
-                                                        <div class="card">
-                                                            <div class="card-image waves-effect waves-block waves-light">
-                                                                <h2 class="left-align card-title-top">Summer 2018</h2>
-                                                                <div class="card-img-wrap">
-                                                                    <img class="activator" src="images/FrauBarnes.webp" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-content">
-                                                                <span class="card-title activator brand-text">Frau Barnes' Europe tour 2018<i class="mdi-navigation-more-vert right"></i></span>
-                                                                <p>13 Days</p>
-                                                            </div>
-                                                            <div class="card-reveal">
-                                                                <div class="rev-title-wrap">
-                                                                    <span class="card-title activator brand-text">Frau Barnes' Europe tour 2018<i class="mdi-navigation-close right"></i></span>
-                                                                    <p>13 Days</p>
-                                                                </div>
-                                                                <p class="rev-content">Where: Luxembourg, Germany, Austria, Switzerland, and Liechtenstein. (Iceland optional) When: Summer 2018 (dates TBD) **Private tour**                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div> <!-- single education -->
-
-                                                    <!-- single education -->
-                                                    <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
-                                                        <div class="card">
-                                                            <div class="card-image waves-effect waves-block waves-light">
-                                                                <h2 class="left-align card-title-top">[2017-2018]</h2>
-                                                                <div class="card-img-wrap">
-                                                                    <img class="activator" src="images/yourDestination.webp" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-content">
-                                                                <span class="card-title activator brand-text">[Your Destiantion Here]<i class="mdi-navigation-more-vert right"></i></span>
-                                                                <p># Days</p>
-                                                            </div>
-                                                            <div class="card-reveal">
-                                                                <div class="rev-title-wrap">
-                                                                    <span class="card-title activator brand-text">A Level<i class="mdi-navigation-close right"></i></span>
-                                                                    <p># Days</p>
-                                                                </div>
-                                                                <p class="rev-content">
-                                                                    Want to offer a tour for your students? This could be your sign-up page...</p>
-                                                            </div>
-                                                        </div>
-                                                    </div> <!-- single education -->
                                                 </div>
                                             </div>
                                         </div>
@@ -288,6 +232,9 @@
             <!-- #resume Section end -->
 
             <!-- Portfolio Section start -->
+
+
+
             <section id="portfolio" class="scroll-section root-sec white portfolio-wrap">
                 <div class="padd-tb-120 brand-bg portfolio-top">
                     <div class="portfolio-inner">

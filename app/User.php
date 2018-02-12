@@ -82,4 +82,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('Tours', 'user_id');
     }
+
+    public function register(Tours $tour)
+    {
+        $this->tours()->save($tour);
+    }
 }
