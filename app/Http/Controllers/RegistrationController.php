@@ -63,32 +63,6 @@ class RegistrationController extends Controller
             $user->save();
 
 
-//        $request->input('passport');
-//        $this->validate(request(), [
-//            'name' => 'required',
-//            'email'=> 'required|email'
-//        ]);
-//
-//
-//        DB::table('users')
-//            ->where('id', $id)
-//            ->update([
-//
-//            'passport' => request('passport')
-//        ]);
-
-//        $user->name = 'name';
-//        $user->birthdate = ('birthdate');
-//        $user->passport = ('passport');
-//        $user->guardian = ('guardian');
-//        $user->phone = ('phone');
-//        $user->terms_and_conditions = ('terms_and_conditions');
-//        $user->email = ('email');
-
-
-
-
-
     }
 
     public function destroy()
