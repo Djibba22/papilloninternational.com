@@ -3,10 +3,12 @@
 namespace PapillonInternational\Http\Controllers;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Facades\Input;
 use PapillonInternational\user_role;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use PapillonInternational\User;
+
 
 class RegistrationController extends Controller
 {
@@ -47,10 +49,19 @@ class RegistrationController extends Controller
 
     public function update(Request $request, $id)
     {
-        try {
-            $user = User::findOrFail($id);
 
-            $user->passport = $request->input('passport');
+            $user = User::find($id);
+
+            $user->birthdate = $request->birthdate;
+            $user->passport = $request->passport;
+            $user->guardian = $request->guardian;
+            $user->phone = $request->phone;
+            $user->email = $request->email;
+            $user->terms_and_conditions = true;
+
+
+            $user->save();
+
 
 //        $request->input('passport');
 //        $this->validate(request(), [
@@ -73,10 +84,7 @@ class RegistrationController extends Controller
 //        $user->phone = ('phone');
 //        $user->terms_and_conditions = ('terms_and_conditions');
 //        $user->email = ('email');
-        }
-        catch (ModelNotFoundException $err){
 
-        }
 
 
 

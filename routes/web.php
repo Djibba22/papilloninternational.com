@@ -40,9 +40,10 @@ Route::get('/tours/{tour}', function ($id) {
 
 Route::get('/tours/{tour}/register', function ($id) {
     $tour = PapillonInternational\Tours::find($id);
+    $user = Auth::user();
 
-    return view('tours.register', compact('tour'));
+    return view('tours.register', compact('tour', 'user'));
 });
 
-Route::post('/registeruser/{id}', 'RegistrationController@update');
+Route::post('/user/{id}', 'RegistrationController@update');
 

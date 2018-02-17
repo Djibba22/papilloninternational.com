@@ -5,35 +5,36 @@
     <div class="row">
         <div class="col-sm-3"></div>
     <div class="col-sm-6">
-<form method="POST" action="/registeruser/{{ Auth::user()->id }}">
+<form method="POST" action="/user/{{ Auth::user()->id }}">
     {{ csrf_field() }}
     <div class="form-group">
-        <label for="name">Traveler Name *</label>
-        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Name of traveler (as it/will appear on passport)" required>
+        <label for="name">Traveler Name (as it/will appear on Passport) *</label>
+        <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" value="{{ $user->name }}" placeholder="Traveler Name" required>
     </div>
     <div class="form-group">
         <label for="birthdate">Traveler Date of Birth *</label>
-        <input type="date" class="form-control" id="birthdate" aria-describedby="birthdateHelp" placeholder="" required>
+        <input type="date" name="birthdate" class="form-control" id="birthdate" aria-describedby="birthdateHelp" placeholder="" required>
     </div>
     <div class="form-group">
         <label for="passport">Traveler Passport Number</label>
-        <input type="text" class="form-control" id="passport" aria-describedby="passportHelp" placeholder="(if available)">
+        <input type="text" name="passport" class="form-control" id="passport" aria-describedby="passportHelp" value="{{ $user->passport }}" placeholder="(if available)">
     </div>
     <div class="form-group">
         <label for="guardian">Traveler Guardian and Relation</label>
-        <input type="text" class="form-control" id="guardian" aria-describedby="guardianHelp" placeholder="(if applicable)">
+        <input type="text" name="guardian" class="form-control" id="guardian" aria-describedby="guardianHelp" placeholder="(if applicable)">
     </div>
     <div class="form-group">
         <label for="phone">Traveler Phone Number</label>
-        <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="208-876-1234">
+        <input type="text" name="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="208-876-1234">
     </div>
     <div class="form-group">
         <label for="email">Email Address *</label>
-        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" value= "{{ $user->email }}" placeholder="name@example.com" required>
     </div>
     <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="terms_and_conditions" required>
-        <label class="form-check-label" for="terms_and_conditions">* I have read and agreed with the </label><button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#termsAndConditions">
+        <input type="checkbox" name="terms_and_conditions" class="form-check-input" id="terms_and_conditions" required>
+        <label class="form-check-label" for="terms_and_conditions">* I have read and agreed with the </label>
+        <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#termsAndConditions">
             Terms and Conditions
         </button>
     </div>
