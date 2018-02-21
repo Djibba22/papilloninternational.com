@@ -15,6 +15,11 @@ class ToursController extends Controller
     public function index()
     {
         //ToDo get some code in here to create tours
+
+        $tours = Tours::get();
+        $itinerary = Tours::selectRaw('itinerary')->get();
+
+        return view('tours.itinerary', compact('itinerary'));
     }
 
     /**

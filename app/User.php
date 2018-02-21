@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'passport'
     ];
 
     /**
@@ -81,5 +81,10 @@ class User extends Authenticatable
     public function tours()
     {
         return $this->hasMany('Tours', 'user_id');
+    }
+
+    public function register(Tours $tour)
+    {
+        $this->tours()->save($tour);
     }
 }
