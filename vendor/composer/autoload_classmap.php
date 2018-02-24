@@ -2500,6 +2500,7 @@ return array(
     'PapillonInternational\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
     'PapillonInternational\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'PapillonInternational\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
+    'PapillonInternational\\Http\\Controllers\\RegistrationController' => $baseDir . '/app/Http/Controllers/RegistrationController.php',
     'PapillonInternational\\Http\\Controllers\\RolesController' => $baseDir . '/app/Http/Controllers/RolesController.php',
     'PapillonInternational\\Http\\Controllers\\ToursController' => $baseDir . '/app/Http/Controllers/ToursController.php',
     'PapillonInternational\\Http\\Controllers\\UserRoleController' => $baseDir . '/app/Http/Controllers/UserRoleController.php',

@@ -18,7 +18,7 @@ class CreateToursTable extends Migration
             $table->increments('id');
             $table->integer('user_id');
             $table->timestamps();
-            $table->string('title');
+            $table->string('title')->unique();
             $table->string('description');
             $table->date('start_date');
             $table->enum('preferred_length',array('7 Days','10 Days','13 Days','15 Days','Longer'));

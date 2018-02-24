@@ -32,7 +32,8 @@ class HomeController extends Controller
         $request->user()->authorizeRoles(['Traveler', 'Group Leader','admin','user']);
         //Get all the tours for this user
         $user = $request->user();
-        $tours = $tour->where("user_id", "=", $user->id)->get();
+        $tours = $user->tours;
+        // $tours = $tour->where("user_id", "=", $user->id)->get();
 
         return view('home',compact('tours'));
     }
