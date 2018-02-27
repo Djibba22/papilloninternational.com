@@ -56,4 +56,10 @@ typings/
 
 # dotenv environment variables file
 .env
+# PHP Storm
+.idea/
+
+# Mac
+.DS_Store 
+
 
