@@ -31,13 +31,18 @@ class WidgetMakeCommand extends GeneratorCommand
     protected $type = 'Widget';
 
     /**
-     * Execute the console command for Laravel >= 5.5
+     * Execute the console command for Laravel >= 5.5.
      *
      * @return void
      */
     public function handle()
     {
-        parent::handle();
+        // hack for Laravel < 5.5
+        if (is_callable('parent::handle')) {
+            parent::handle();
+        } else {
+            parent::fire();
+        }
 
         if (!$this->option('plain')) {
             $this->createView();
@@ -45,7 +50,7 @@ class WidgetMakeCommand extends GeneratorCommand
     }
 
     /**
-     * Execute the console command for Laravel < 5.5
+     * Execute the console command for Laravel < 5.5.
      *
      * @return void
      */

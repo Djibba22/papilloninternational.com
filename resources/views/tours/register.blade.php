@@ -1,23 +1,32 @@
 @extends('layouts.app')
 
+@section('extra-heading')
+
+    <script src="https://js.stripe.com/v3/"></script>
+
+@endsection
 
 @section('content')
     <div class="row">
         <div class="col-sm-3"></div>
     <div class="col-sm-6">
-<form method="POST" action="/user/{{ Auth::user()->id }}">
+<form method="POST" action="{{ route('payment.store') }}" id="payment-form">
     {{ csrf_field() }}
     <div class="form-group">
         <label for="tour"><h3>{{ $tour->title }}</h3></label>
         <input type="hidden" name="tour" class="form-control" value="{{ $tour->title }}" id="tour">
+        <input type="hidden" name="tour_id" class="form-control" value="{{ $tour->id }}" id="tour_id">
+
     </div>
     <div class="form-group">
         <label for="name">Traveler Name (as it/will appear on Passport) *</label>
         <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" value="{{ $user->name }}" placeholder="Traveler Name" required>
+        <input type="hidden" name="user_id" class="form-control" value="{{ $user->id }}" id="user_id">
+
     </div>
     <div class="form-group">
         <label for="birthdate">Traveler Date of Birth *</label>
-        <input type="date" name="birthdate" class="form-control" id="birthdate" aria-describedby="birthdateHelp" placeholder="" required>
+        <input type="date" name="birthdate" class="form-control" id="birthdate" aria-describedby="birthdateHelp" value= "{{ $user->birthdate }}" placeholder="" required>
     </div>
     <div class="form-group">
         <label for="passport">Traveler Passport Number</label>
@@ -35,6 +44,25 @@
         <label for="email">Email Address *</label>
         <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" value= "{{ $user->email }}" placeholder="name@example.com" required>
     </div>
+
+    <!-- Credit card info -->
+    <div class="form-group">
+        <label for="card-element">
+            Credit or debit card
+        </label>
+        <div id="card-element" class="form-control">
+            <!-- A Stripe Element will be inserted here. -->
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="deposit">Deposit Amount *</label>
+        <input type="number" name="deposit" class="form-control" id="deposit" aria-describedby="depositHelp"  min="150" max="{{ $tour->price }}" placeholder="150.00 minimum" required >
+    </div>
+
+    <!-- Used to display form errors. -->
+    <div id="card-errors" role="alert"></div>
+
     <div class="form-check">
         <input type="checkbox" name="terms_and_conditions" class="form-check-input" id="terms_and_conditions" required>
         <label class="form-check-label" for="terms_and_conditions">* I have read and agreed with the </label>
@@ -42,7 +70,8 @@
             Terms and Conditions
         </button>
     </div>
-    <button type="submit" class="btn btn-primary">Register</button>
+    <button type="submit" id="depositButton" class="btn btn-primary">Register/Pay Deposit</button>
+
 </form>
         <!-- Button trigger modal -->
 
@@ -110,5 +139,87 @@
     </div>
 
 
+
+@endsection
+
+
+@section('extra-js')
+
+    <script>
+        (function () {
+            // Create a Stripe client.
+            var stripe = Stripe('pk_test_5n2qp9RPlpHXpBThK6cTRD48');
+
+// Create an instance of Elements.
+            var elements = stripe.elements();
+
+// Custom styling can be passed to options when creating an Element.
+// (Note that this demo uses a wider set of styles than the guide below.)
+            var style = {
+                base: {
+                    color: '#32325d',
+                    lineHeight: '1.6rem',
+                    fontFamily: 'Raleway, sans-serif',
+                    fontSmoothing: 'antialiased',
+                    fontSize: '14px',
+                    '::placeholder': {
+                        color: '#aab7c4'
+                    }
+                },
+                invalid: {
+                    color: '#fa755a',
+                    iconColor: '#fa755a'
+                }
+            };
+
+// Create an instance of the card Element.
+            var card = elements.create('card', {style: style});
+
+// Add an instance of the card Element into the `card-element` <div>.
+            card.mount('#card-element');
+
+// Handle real-time validation errors from the card Element.
+            card.addEventListener('change', function(event) {
+                var displayError = document.getElementById('card-errors');
+                if (event.error) {
+                    displayError.textContent = event.error.message;
+                } else {
+                    displayError.textContent = '';
+                }
+            });
+
+// Handle form submission.
+            var form = document.getElementById('payment-form');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                console.log("form stuff");
+
+                stripe.createToken(card).then(function(result) {
+                    if (result.error) {
+                        // Inform the user if there was an error.
+                        var errorElement = document.getElementById('card-errors');
+                        errorElement.textContent = result.error.message;
+                    } else {
+                        // Send the token to your server.
+                        stripeTokenHandler(result.token);
+                    }
+                });
+            });
+
+            function stripeTokenHandler(token) {
+                // Insert the token ID into the form so it gets submitted to the server
+                var form = document.getElementById('payment-form');
+                var hiddenInput = document.createElement('input');
+                hiddenInput.setAttribute('type', 'hidden');
+                hiddenInput.setAttribute('name', 'stripeToken');
+                hiddenInput.setAttribute('value', token.id);
+                form.appendChild(hiddenInput);
+
+                // Submit the form
+                form.submit();
+            }
+
+        })();
+    </script>
 
 @endsection
