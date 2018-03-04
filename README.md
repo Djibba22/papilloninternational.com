@@ -2,7 +2,7 @@
 
 
 
-![screenshot of app](images/papillionFront.png)
+![screenshot of app](images/ScreenShot.png)
 
 ## Application for worldwide tours providing the ability for **Students** and **Teachers** to sign up, sign in and track payments made on the site.
 
