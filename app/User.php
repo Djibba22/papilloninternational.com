@@ -80,7 +80,7 @@ class User extends Authenticatable
      */
     public function tours()
     {
-        return $this->hasMany('Tours', 'user_id');
+        return $this->belongsToMany(Tours::class)->withTimestamps()->withPivot('balance');
     }
 
     public function register(Tours $tour)

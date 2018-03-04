@@ -15,7 +15,7 @@
         <section id="overview">
             <div class="description col-md-8">
 
-                    {{ $tour->itinerary }}
+                    {!! nl2br(e($tour->itinerary)) !!}
             </div>
 
         </section>
