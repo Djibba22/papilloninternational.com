@@ -43,3 +43,6 @@ Route::get('/tours/{tour}/register', function ($id) {
 });
 
 Route::post('/user/{id}', 'RegistrationController@update');
+
+Route::get('/payment', 'PaymentController@index')->name('payment.index');
+Route::post('/payment', 'PaymentController@store')->name('payment.store');
