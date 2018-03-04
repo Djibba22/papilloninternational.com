@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddColumnItineraryToTours extends Migration
+class CreateToursUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class AddColumnItineraryToTours extends Migration
      */
     public function up()
     {
-        Schema::table('tours', function (Blueprint $table) {
-            $table->text('itinerary');
+        Schema::create('tours_user', function (Blueprint $table) {
+            $table->integer('tours_id');
+            $table->integer('user_id');
+            $table->decimal('balance', 8, 2);
+            $table->timestamps();
+            $table->primary(['tours_id', 'user_id']);
         });
     }
 
@@ -25,8 +29,6 @@ class AddColumnItineraryToTours extends Migration
      */
     public function down()
     {
-        Schema::table('tours', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('tours_user');
     }
 }

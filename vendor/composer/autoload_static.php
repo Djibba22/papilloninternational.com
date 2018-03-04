@@ -2859,6 +2859,7 @@ class ComposerStaticInitc5c3a29f2a7289c660c0e15d53e761ff
         'PapillonInternational\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'PapillonInternational\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'PapillonInternational\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'PapillonInternational\\Http\\Controllers\\RegistrationController' => __DIR__ . '/../..' . '/app/Http/Controllers/RegistrationController.php',
         'PapillonInternational\\Http\\Controllers\\RolesController' => __DIR__ . '/../..' . '/app/Http/Controllers/RolesController.php',
         'PapillonInternational\\Http\\Controllers\\ToursController' => __DIR__ . '/../..' . '/app/Http/Controllers/ToursController.php',
         'PapillonInternational\\Http\\Controllers\\UserRoleController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserRoleController.php',

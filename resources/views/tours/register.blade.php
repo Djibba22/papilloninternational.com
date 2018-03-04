@@ -7,7 +7,10 @@
     <div class="col-sm-6">
 <form method="POST" action="/user/{{ Auth::user()->id }}">
     {{ csrf_field() }}
-    <div><h3>{{ $tour->title }}</h3></div>
+    <div class="form-group">
+        <label for="tour"><h3>{{ $tour->title }}</h3></label>
+        <input type="hidden" name="tour" class="form-control" value="{{ $tour->title }}" id="tour">
+    </div>
     <div class="form-group">
         <label for="name">Traveler Name (as it/will appear on Passport) *</label>
         <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" value="{{ $user->name }}" placeholder="Traveler Name" required>

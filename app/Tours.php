@@ -13,6 +13,6 @@ class Tours extends Model
     public function user()
     {
         return $this
-            ->belongsTo('PapillonInternational\User');
+            ->belongsToMany(User::class)->withTimestamps()->withPivot('balance');
     }
 }
